@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sona! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Happy Birthday <span class="name">Sona</span>! <i class="fas fa-birthday-cake"></i></h1>
+            <p class="subtitle">May your day be as wonderful as you are!</p>
+        </div>
+
+        <div class="interactive-section">
+            <div class="button-group">
+                <button id="balloon-btn" class="action-btn"><i class="fas fa-cloud"></i> Release Balloons</button>
+                <button id="confetti-btn" class="action-btn"><i class="fas fa-sparkles"></i> Throw Confetti</button>
+                <button id="simulate-btn" class="action-btn"><i class="fas fa-magic"></i> Simulate Birthday</button>
+                <button id="quiz-btn" class="action-btn"><i class="fas fa-question-circle"></i> Take Our Quiz</button>
+                <button id="message-btn" class="action-btn"><i class="fas fa-envelope"></i> Special Message</button>
+            </div>
+
+            <div id="message-display" class="message-box hidden">
+                <p id="displayed-message"></p>
+                <button id="close-message" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div id="quiz-container" class="quiz-box hidden">
+                <h3>How Well Do You Know Sona?</h3>
+                <div id="quiz-questions"></div>
+                <div id="quiz-results" class="hidden"></div>
+                <button id="close-quiz" class="close-btn"><i class="fas fa-times"></i> Close Quiz</button>
+            </div>
+        </div>
+
+        <div class="balloons-container"></div>
+        
+        <div class="music-controls">
+            <audio id="bg-music" loop>
+                <source src="assets/birthday-song.mp3" type="audio/mpeg">
+            </audio>
+            <button id="music-btn" class="music-btn"><i class="fas fa-music"></i> Toggle Music</button>
+        </div>
+    </div>
+
+    <canvas id="confetti-canvas"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>
